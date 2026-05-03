@@ -1,0 +1,209 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── DESIGN TOKENS ─────────────────────────────────────────────────────────── */
+:root {
+  /* Navy palette */
+  --navy-950: #060d1a;
+  --navy-900: #0a1628;
+  --navy-800: #0f2040;
+  --navy-700: #162d58;
+
+  /* Slate */
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --slate-100: #f1f5f9;
+
+  /* Emerald accent */
+  --emerald-400: #34d399;
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+
+  /* Functional */
+  --red-400: #f87171;
+  --amber-400: #fbbf24;
+
+  /* Fonts */
+  --font-display: "Syne", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+/* ─── BASE ───────────────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--navy-950);
+    color: var(--slate-100);
+    font-family: var(--font-body);
+  }
+
+  ::selection {
+    background: rgba(16, 185, 129, 0.3);
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--navy-900);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--navy-700);
+    border-radius: 99px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--emerald-600);
+  }
+}
+
+/* ─── COMPONENTS ─────────────────────────────────────────────────────────────── */
+@layer components {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  /* ── Cards ── */
+  .card {
+    @apply bg-navy-900 border border-navy-700 rounded-xl p-5;
+    backdrop-filter: blur(8px);
+  }
+
+  .card-hover {
+    @apply card transition-all duration-200 hover:border-emerald-600/40 hover:shadow-lg hover:shadow-emerald-900/20;
+  }
+
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-display font-semibold text-sm
+           bg-emerald-500 text-navy-950 transition-all duration-150
+           hover:bg-emerald-400 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg font-body text-sm text-slate-400
+           border border-navy-700 transition-all duration-150
+           hover:border-slate-600 hover:text-slate-200 active:scale-95;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg font-body text-sm
+           text-red-400 border border-red-900/40 transition-all duration-150
+           hover:bg-red-950/30 active:scale-95;
+  }
+
+  /* ── Inputs ── */
+  .input-base {
+    @apply w-full bg-navy-800 border border-navy-700 text-slate-100 rounded-lg px-4 py-2.5
+           placeholder:text-slate-500 text-sm outline-none transition-all duration-150
+           focus:border-emerald-600/60 focus:ring-1 focus:ring-emerald-600/30;
+  }
+
+  .textarea-base {
+    @apply input-base resize-none leading-relaxed;
+  }
+
+  /* ── Badges ── */
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-emerald {
+    @apply badge bg-emerald-900/40 text-emerald-400 border border-emerald-800/40;
+  }
+
+  .badge-slate {
+    @apply badge bg-navy-800 text-slate-400 border border-navy-700;
+  }
+
+  /* ── Dividers ── */
+  .divider {
+    @apply border-t border-navy-700/60;
+  }
+
+  /* ── Vote buttons ── */
+  .vote-btn {
+    @apply flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium
+           text-slate-500 border border-transparent transition-all duration-150
+           hover:border-navy-700 hover:text-slate-300 active:scale-95;
+  }
+
+  .vote-btn-up {
+    @apply vote-btn hover:text-emerald-400 hover:border-emerald-900/40;
+  }
+
+  .vote-btn-down {
+    @apply vote-btn hover:text-red-400 hover:border-red-900/40;
+  }
+
+  /* ── Glow dot ── */
+  .status-dot {
+    @apply w-2 h-2 rounded-full bg-emerald-500 animate-pulse;
+  }
+
+  /* ── Skeleton loader ── */
+  .skeleton {
+    @apply rounded-lg bg-navy-800 animate-pulse;
+  }
+}
+
+/* ─── UTILITIES ──────────────────────────────────────────────────────────────── */
+@layer utilities {
+  /* Color utilities mapping to tokens */
+  .bg-navy-950 { background-color: var(--navy-950); }
+  .bg-navy-900 { background-color: var(--navy-900); }
+  .bg-navy-800 { background-color: var(--navy-800); }
+  .bg-navy-700 { background-color: var(--navy-700); }
+
+  .border-navy-700 { border-color: var(--navy-700); }
+  .border-navy-800 { border-color: var(--navy-800); }
+
+  .text-emerald-400 { color: var(--emerald-400); }
+  .text-emerald-500 { color: var(--emerald-500); }
+
+  /* Glassmorphism panel */
+  .glass {
+    background: rgba(10, 22, 40, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+  }
+
+  /* Emerald text glow */
+  .text-glow {
+    text-shadow: 0 0 24px rgba(16, 185, 129, 0.5);
+  }
+
+  /* Fade-in animation */
+  .animate-fade-in {
+    animation: fadeIn 0.35s ease both;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}

@@ -1,0 +1,120 @@
+[debug] [2026-05-03T17:40:14.570Z] ----------------------------------------------------------------------
+[debug] [2026-05-03T17:40:14.574Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2026-05-03T17:40:14.574Z] CLI Version:   15.16.0
+[debug] [2026-05-03T17:40:14.574Z] Platform:      win32
+[debug] [2026-05-03T17:40:14.574Z] Node Version:  v22.15.0
+[debug] [2026-05-03T17:40:14.575Z] Time:          Sun May 03 2026 23:40:14 GMT+0600 (Bangladesh Standard Time)
+[debug] [2026-05-03T17:40:14.575Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  The Firebase CLI’s MCP server feature can optionally make use of Gemini in Firebase. Learn more about Gemini in Firebase and how it uses your data: https://firebase.google.com/docs/gemini-in-firebase#how-gemini-in-firebase-uses-your-data 
+[info] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you. 
+[info] 
+[info] i  To change your preferences at any time, run `firebase logout` and `firebase login` again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=405030543&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2026-05-03T17:40:47.104Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2026-05-03T17:40:47.105Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2026-05-03T17:40:47.697Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2026-05-03T17:40:47.697Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] +  Success! Logged in as razaulibnabari352@gmail.com 
+[debug] [2026-05-03T17:40:53.224Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:309:49)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-05-03T17:41:05.343Z] ----------------------------------------------------------------------
+[debug] [2026-05-03T17:41:05.346Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2026-05-03T17:41:05.346Z] CLI Version:   15.16.0
+[debug] [2026-05-03T17:41:05.346Z] Platform:      win32
+[debug] [2026-05-03T17:41:05.347Z] Node Version:  v22.15.0
+[debug] [2026-05-03T17:41:05.347Z] Time:          Sun May 03 2026 23:41:05 GMT+0600 (Bangladesh Standard Time)
+[debug] [2026-05-03T17:41:05.347Z] ----------------------------------------------------------------------
+[debug] 
+[info] Already logged in as razaulibnabari352@gmail.com
+[debug] [2026-05-03T17:41:10.793Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:309:49)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-05-03T17:41:18.812Z] ----------------------------------------------------------------------
+[debug] [2026-05-03T17:41:18.814Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-05-03T17:41:18.814Z] CLI Version:   15.16.0
+[debug] [2026-05-03T17:41:18.814Z] Platform:      win32
+[debug] [2026-05-03T17:41:18.815Z] Node Version:  v22.15.0
+[debug] [2026-05-03T17:41:18.815Z] Time:          Sun May 03 2026 23:41:18 GMT+0600 (Bangladesh Standard Time)
+[debug] [2026-05-03T17:41:18.815Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\files
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-05-03T17:41:28.988Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-03T17:41:28.989Z] > authorizing via signed-in user (razaulibnabari352@gmail.com)
+[debug] [2026-05-03T17:41:28.990Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:28.990Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:28.991Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-05-03T17:41:30.303Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-05-03T17:41:30.303Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Dataconnect Setup
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2026-05-03T17:41:44.974Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:44.974Z] Checked if tokens are valid: true, expires at: 1777833646697
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2026-05-03T17:41:44.975Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:44.975Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:44.976Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-05-03T17:41:44.976Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/firebasedataconnect.googleapis.com  x-goog-user-project=baiusttalks
+[debug] [2026-05-03T17:41:44.977Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/sqladmin.googleapis.com [none]
+[debug] [2026-05-03T17:41:44.977Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/sqladmin.googleapis.com  x-goog-user-project=baiusttalks
+[debug] [2026-05-03T17:41:47.088Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-05-03T17:41:47.088Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/firebasedataconnect.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API firebasedataconnect.googleapis.com. Enabling now... 
+[debug] [2026-05-03T17:41:47.089Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:47.089Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:47.090Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/firebasedataconnect.googleapis.com:enable [none]
+[debug] [2026-05-03T17:41:47.090Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/firebasedataconnect.googleapis.com:enable  x-goog-user-project=baiusttalks
+[debug] [2026-05-03T17:41:47.193Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/sqladmin.googleapis.com 200
+[debug] [2026-05-03T17:41:47.193Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2026-05-03T17:41:47.194Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:47.194Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:47.194Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/sqladmin.googleapis.com:enable [none]
+[debug] [2026-05-03T17:41:47.194Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/sqladmin.googleapis.com:enable  x-goog-user-project=baiusttalks
+[debug] [2026-05-03T17:41:48.831Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/firebasedataconnect.googleapis.com:enable 200
+[debug] [2026-05-03T17:41:48.831Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/firebasedataconnect.googleapis.com:enable [omitted]
+[debug] [2026-05-03T17:41:48.881Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/sqladmin.googleapis.com:enable 200
+[debug] [2026-05-03T17:41:48.881Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2026-05-03T17:41:58.898Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:58.898Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:41:58.898Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/baiusttalks/locations/-/services [none]
+[debug] [2026-05-03T17:42:01.331Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/baiusttalks/locations/-/services 200
+[debug] [2026-05-03T17:42:01.332Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/baiusttalks/locations/-/services {}
+[info] i  : ensuring required API cloudaicompanion.googleapis.com is enabled... 
+[debug] [2026-05-03T17:42:08.033Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:42:08.033Z] Checked if tokens are valid: true, expires at: 1777833646697
+[debug] [2026-05-03T17:42:08.033Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/cloudaicompanion.googleapis.com [none]
+[debug] [2026-05-03T17:42:08.033Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/cloudaicompanion.googleapis.com  x-goog-user-project=baiusttalks
+[debug] [2026-05-03T17:42:10.385Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/cloudaicompanion.googleapis.com 200
+[debug] [2026-05-03T17:42:10.385Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/baiusttalks/services/cloudaicompanion.googleapis.com [omitted]
+[info] +  : required API cloudaicompanion.googleapis.com is enabled 
